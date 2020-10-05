@@ -1,0 +1,7 @@
+@import "../../styles/variables.scss";
+
+.btn {
+  &.button-color {
+    background-color: $green !important;        
+  }
+}

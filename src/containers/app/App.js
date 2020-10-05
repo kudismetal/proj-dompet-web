@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import './App.scss';
+import Register from '../register/Register';
+import Login from '../login/Login';
 import Dashboard from '../dashboard/Dashboard';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
         <Col>
           <Router>
             <Switch>
-              <Route path="/" exact><Dashboard /></Route>
+              <Route path="/" exact><Dashboard/></Route>
+              <Route path="/login" exact><Login/></Route>
+              <Route path="/register" exact><Register/></Route>
             </Switch>
           </Router>
         </Col>
