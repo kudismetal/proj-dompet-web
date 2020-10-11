@@ -2,13 +2,13 @@
 @import "../../components/custom_button/CustomButton.scss";
 
 .btn-frame {
-  width: 80%;
+  width: 90%;
   padding: 2px;
   background-color: $white;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   position: relative;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: -20px;
   margin-bottom: 10px;
 }
@@ -33,9 +33,9 @@
   &.btn-light {
     border-radius: 15px;
     text-align: center;
-    position: fixed;
-    margin-left: 73%;
-    margin-top: -11%;
+    position: relative;
+    margin-left: 80%;
+    margin-top: -25%;
     padding: 5px;
   }
   &:active {
@@ -58,7 +58,7 @@
 .form-control {
   &.form-rounded {
     text-align: left;
-    margin: 5px;
+    margin-bottom: 5px;
     border-radius: 15px;
   }
 }
