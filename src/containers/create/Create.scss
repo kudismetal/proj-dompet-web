@@ -1,47 +1,66 @@
 @import "../../styles/variables.scss";
 @import "../../components/custom_button/CustomButton.scss";
 
-.btn{
-    &.btn-color{
-        color: $white;
-        background:$green;
-        border:none;
-        border-radius: 15px;
-    }
-    &.rounded-pill{
-        padding: 0px;
-        background:transparent;
-        border-color:$green;
-        border-radius: 15px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
-    }
+.btn-frame {
+  width: 80%;
+  padding: 2px;
+  background-color: $white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  position: relative;
+  margin-left: 10%;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
-    
+.header {
+  color: $white;
+}
 
+.btn {
+  &.btn-color {
+    color: $white;
+    background: $green;
+    border: none;
+    border-radius: 15px;
+  }
+  &.btn-rounded {
+    background-color: transparent !important;
+    border: none !important;
+    color: $grey;
+    width: calc(100% / 3);
+    border-radius: 10px;
+  }
+  &.btn-light {
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    margin-left: 73%;
+    margin-top: -11%;
+    padding: 5px;
+  }
+  &:active {
+    background-color: $green !important;
+    border-radius: 15px !important;
+    color: $white;
+  }
+}
 
-.card{
-    &.card-body{
-        color:$white;
-        background-color: $green;
-        border: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
-    }
-    &.card-footer{
-        border-width: 1px;
-        border-color: $green;
-        border-radius: 15px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    }  
+.card {
+  &.card-body {
+    color: $white;
+    background-color: $green;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .form-control {
-    &.form-rounded{
+  &.form-rounded {
     text-align: left;
-    margin:5px;
+    margin: 5px;
     border-radius: 15px;
-    }
+  }
 }
 
 .add {
@@ -51,25 +70,27 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin-left: 10px;;
+  margin-left: 73%;
+  margin-top: -11%;
+  position: fixed;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-input{
-    outline:0;
-    border-width: 0 0 1px;
-    background: transparent;
-    border-color: white;
-    color: white;
-    margin:0 0 0;
+input {
+  outline: 0;
+  border-width: 0 0 1px;
+  background: transparent;
+  border-color: white;
+  color: white;
+  margin: 0 0 0;
 }
 input:focus ~ .border {
-    width: 100%;
-    transition: 0.5s;
+  width: 100%;
+  transition: 0.5s;
 }
-.label{
-    color: grey;
-    text-align: center;
+.label {
+  color: grey;
+  text-align: center;
 }
 /*select{
     all:unset;
