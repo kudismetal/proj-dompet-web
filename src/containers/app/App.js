@@ -6,6 +6,7 @@ import Login from '../login/Login';
 import History from '../history/History';
 import Create from '../create/Create';
 import Dashboard from '../dashboard/Dashboard';
+import Register from '../register/Register';
 import Error404 from '../../components/error_404/Error404';
 
 const history = createBrowserHistory();
@@ -21,6 +22,7 @@ function App() {
               <Route path="/login" exact component={Login} />
               <Route path="/create" exact component={Create} />
               <Route path="/history" exact component={History} />
+              <Route path="/register" exact component={Register} />
               <Route path="*" component={Error404} />
             </Switch>
           </Router>
