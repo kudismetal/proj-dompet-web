@@ -8,11 +8,10 @@ import './SaldoAwal.scss';
 const SaldoAwal = () => (
   <>
     <Row>
-      <Col className="d-flex flex-column align-items-left justify-content-center pd-28 saldoawal">
-        <img src="/images/icons/saldo-awal.svg" alt="saldo-awal" />
-        <br />
+      <Col className="d-flex flex-column align-items-left justify-content-center">
+        <p className ="saldo-awal text-center"><img src="/images/ilustrations/saldo-awal.png" alt="saldo-awal"/></p>
         <div className="float-left">
-          <img src="/images/icons/text-saldo-awal-anda.svg" alt="sort-icon" />
+          <img src="/images/texts/text-saldo-awal.svg" alt="sort-icon" />
         </div>
         <br />
         <FormControl
@@ -22,8 +21,7 @@ const SaldoAwal = () => (
         />
         <br />
         <CustomButton
-          onClick={() => { }}
-          className="lanjut"
+          className="custom-button"
           text="Lanjut"
         />
         <br />
