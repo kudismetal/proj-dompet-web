@@ -21,6 +21,8 @@ function App() {
               <Route path="/" exact component={Dashboard} />
               <Route path="/login" exact component={Login} />
               <Route path="/forgotpassword" exact component={ForgotPassword} />
+              <Route path="/create" exact component={Create} />
+              <Route path="/history" exact component={History} />
               <Route path="*" component={Error404} />
             </Switch>
           </Router>
