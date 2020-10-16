@@ -55,7 +55,7 @@ class SplashScreenContainer extends React.Component {
         </div>
         <CustomButton
           text="Lanjut"
-          className="button" 
+          className="custom-button" 
           onClick={() => this.handleClickNext(activeSplash)}
         /> 
       </Col>
