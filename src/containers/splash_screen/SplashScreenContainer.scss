@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.error-404 {
+.splash-screen {
   height: 100vh;
 
   @media screen and (max-width: 575.98px) {
@@ -10,9 +10,19 @@
   }
 }
 
+.image-link {
+  width: 305.39px;
+  height: 240.54px;
+}
+
+.step-page {
+  width: 50px;
+  height: 10px;
+}
+
 .btn {
   &.custom-button {
-    &.not-found {
+    &.button {
       background-color: $green;
 
       @media screen and (max-width: 575.98px) {
